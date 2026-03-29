@@ -13,16 +13,16 @@
 				<h1 class="text-center">It's Quiz Time!</h1>
 				<h2>Welcome to this General Knowledge Quiz.</h2>
 				<p>Test your knowledge with these fun questions. Share your results and compete against your friends.</p>
-				<p>If at anytime you'd like to stop the quiz and get score for the questions answered, click the "Done" button. Currently there are <span data-attr="total-questions">5</span> questions in total</p>
+				<p>If at anytime you'd like to stop the quiz and get the score for the questions answered, click the "Done" button. Currently there are <span data-attr="total-questions" id="total-questions">5</span> questions in total</p>
 				<button class="quiz-btn" id="start-btn">Start Quiz</button>
 			</div>
 
 			<!-- Quiz Screen - Will display 1 question at a time -->
 			<div class="screen" id="quiz-screen">
 				<div class="quiz-header">
-					<h2 class="question-text text-center" id="question-text">The individual question</h2>
+					<h2 class="question-text text-center" id="current-question-text">The individual question</h2>
 					<div class="quiz-info">
-						<p>Question <span data-attr="current-question">1</span> of <span data-attr="total-questions">5</span></p>
+						<p>Question <span data-attr="current-question-number">1</span> of <span data-attr="total-questions">5</span></p>
 						<p>Score: <span data-attr="score">0</span></p>
 					</div>
 					<div class="question-category" data-attr="question-category">General</div>
@@ -33,7 +33,7 @@
 				<div class="progress-bar">
 					<div class="progress" data-attr="progress"></div>
 				</div>
-				<button class="quiz-btn quiz-btn-outline" id="start-btn">Done - Show Results</button>
+				<button class="quiz-btn quiz-btn-outline" id="stop-btn">Done - Show Results</button>
 			</div>
 
 			<!-- Quiz Results Screen - Tally of Score -->
@@ -47,5 +47,7 @@
 				<button class="quiz-btn" id="restart-btn">Restart Quiz</button>
 			</div>
 		</main>
+
+		<script type="module" src="js/quiz.js"></script>
 	</body>
 </html>
