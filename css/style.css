@@ -1,3 +1,96 @@
+:root {
+	/* Change these values, as required */
+	--clr-white: hsl(0 0% 100%);
+	--clr-neutral-100: hsl(0 0% 95%);
+	--clr-neutral-400: hsl(0 0% 60%);
+	--clr-neutral-800: hsl(0 0% 17.5%);
+	--clr-neutral-900: hsl(0 0% 7.5%);
+
+	--clr-orange-100: hsl(31, 72%, 95%);
+	--clr-orange-200: hsl(31, 72%, 82.5%);
+	--clr-orange-400: hsl(31, 72%, 60%);
+	--clr-orange-500: hsl(31, 72%, 50%);
+	--clr-orange-600: hsl(31, 72%, 40%);
+	--clr-orange-900: hsl(31, 72%, 7.5%);
+
+	--clr-blue-100: hsl(219, 81%, 95%);
+	--clr-blue-200: hsl(219, 81%, 82.5%);
+	--clr-blue-400: hsl(219, 81%, 60%);
+	--clr-blue-500: hsl(219, 81%, 50%);
+	--clr-blue-600: hsl(219, 81%, 40%);
+	--clr-blue-900: hsl(219, 81%, 7.5%);
+
+	--clr-lime-200: hsl(144 75% 82.5%);
+	--clr-lime-700: hsl(144 75% 30%);
+
+	--clr-red-200: hsl(0 75% 82.5%);
+	--clr-red-700: hsl(0 75% 30%);
+
+	--ff-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--fs-small: 0.872rem;
+	--fs-mid: 1.25rem;
+	--fs-large: 1.65rem;
+	--fs-larger: 2rem;
+	--fw-300: 300;
+	--fw-400: 400;
+	--fw-600: 600;
+	--fw-700: 700;
+
+	/* --size-1: 0.25rem; */
+	--size-2: 0.5rem;
+	--size-3: 0.75rem;
+	--size-4: 1rem;
+	/* --size-5: 1.25rem; */
+	--size-6: 1.5rem;
+	/* --size-7: 1.75rem; */
+	--size-8: 2rem;
+	/* --size-9: 2.5rem; */
+	/* --size-10: 3rem; */
+	/* --size-11: 4rem; */
+	/* --size-12: 5rem; */
+	/* --size-13: 6rem; */
+	/* --size-14: 8rem; */
+	/* --size-15: 10rem; */
+
+	/* For Light Theme */
+	--text-primary-light: var(--clr-neutral-900);
+	/* --text-secondary-light: var(--clr-neutral-800); */
+	--text-tertiary-light: var(--clr-neutral-400);
+	--text-accent-light: var(--clr-orange-400);
+	--bg-primary-light: var(--clr-orange-100);
+	--bg-secondary-light: var(--clr-white);
+
+	/* For Dark Theme */
+	--text-primary-dark: var(--clr-neutral-100);
+	/* --text-secondary-dark: var(--clr-neurtal-200); */
+	--text-tertiary-dark: var(--clr-neutral-400);
+	--text-accent-dark: var(--clr-blue-400);
+	--bg-primary-dark: var(--clr-blue-900);
+	--bg-secondary-dark: var(--clr-neutral-800);
+
+	color-scheme: light dark;
+	--background: light-dark(var(--bg-primary-light), var(--bg-primary-dark));
+	--background-2: light-dark(var(--bg-secondary-light), var(--bg-secondary-dark));
+	--box-shadow: light-dark(var(--clr-orange-900), var(--clr-blue-100));
+	--button: light-dark(var(--clr-orange-500), var(--clr-blue-600));
+	--button-hover: light-dark(var(--clr-orange-600), var(--clr-blue-500));
+	--color: light-dark(var(--text-primary-light), var(--text-primary-dark));
+	--color-2: light-dark(var(--text-accent-light), var(--text-accent-dark));
+	--color-3: light-dark(var(--text-tertiary-light), var(--text-tertiary-dark));
+	--headers: light-dark(var(--clr-orange-400), var(--clr-blue-400));
+
+	--progress-start: light-dark(var(--clr-orange-200), var(--clr-blue-200));
+	--progress-end: light-dark(var(--clr-orange-600), var(--clr-blue-600));
+
+	--answer-btn: light-dark(var(--clr-orange-200), var(--clr-blue-200));
+	--answer-btn-border: light-dark(var(--clr-orange-400), var(--clr-blue-400));
+	--answer-btn-hover: light-dark(var(--clr-orange-600), var(--clr-blue-600));
+	--answer-btn-bg-✔️: light-dark(var(--clr-lime-200), var(--clr-lime-200));
+	--answer-btn-clr-✔️: light-dark(var(--clr-lime-700), var(--clr-lime-700));
+	--answer-btn-bg-❌: light-dark(var(--clr-red-200), var(--clr-red-200));
+	--answer-btn-clr-❌: light-dark(var(--clr-red-700), var(--clr-red-700));
+}
+
 /* RESET */
 *,
 *::before,
@@ -20,21 +113,10 @@ svg {
 
 /* CUSTOM STYLES */
 body {
-	background-color: #fec196;
-	color: #090c02;
-	font-family:
-		system-ui,
-		-apple-system,
-		BlinkMacSystemFont,
-		"Segoe UI",
-		Roboto,
-		Oxygen,
-		Ubuntu,
-		Cantarell,
-		"Open Sans",
-		"Helvetica Neue",
-		sans-serif;
-	font-size: 1rem;
+	background-color: var(--background);
+	color: var(--color);
+	font-family: var(--ff-primary);
+	font-size: var(--size-4);
 	line-height: 1.4;
 
 	display: flex;
@@ -42,30 +124,30 @@ body {
 	align-items: center;
 	min-height: 100vh;
 
-	padding: 1rem;
+	padding: var(--size-4);
 }
 h1,
 h2 {
-	font-weight: 700;
+	font-weight: var(--fw-700);
 	margin-bottom: 0.7rem;
 }
 h1 {
-	font-size: 2rem;
+	font-size: var(--fs-larger);
 }
 h2 {
-	font-size: 1.65rem;
+	font-size: var(--fs-large);
 }
 p {
-	margin-bottom: 1rem;
+	margin-bottom: var(--size-4);
 }
 
 /* UTILITY STYLES */
 button {
 	border: none;
-	border-radius: 0.5rem;
+	border-radius: var(--size-2);
 	font-size: inherit;
-	font-weight: 300;
-	padding: 0.5rem 1rem;
+	font-weight: var(--fw-300);
+	padding: var(--size-2) var(--size-4);
 
 	cursor: pointer;
 }
@@ -75,9 +157,10 @@ button {
 
 /* LAYOUT STYLES */
 .container {
-	background: #fffbfc;
-	border-radius: 1rem;
-	box-shadow: 6px 6px 6px -2px rgba(9, 12, 2, 0.1);
+	--box-shadow-transparency: color-mix(in srgb, var(--box-shadow) 10%, transparent);
+	background: var(--background-2);
+	border-radius: var(--size-4);
+	box-shadow: 6px 6px 6px -2px var(--box-shadow-transparency);
 
 	width: 100%;
 	max-width: 600px;
@@ -88,7 +171,7 @@ button {
 /* QUIZ STYLES */
 .screen {
 	display: none;
-	padding: 2rem;
+	padding: var(--size-8);
 }
 .screen.active {
 	display: block;
@@ -96,41 +179,41 @@ button {
 
 #start-screen h1,
 #result-screen h1 {
-	color: #bb4d00;
+	color: var(--headers);
 }
 #start-screen p,
 #result-screen > p {
-	font-size: 1.125rem;
+	font-size: var(--fs-mid);
 }
 
 .quiz-info {
-	color: #777777;
+	color: var(--color-3);
 	display: flex;
 	justify-content: space-between;
 }
 .question-category {
-	background-color: #bb4d00;
+	background-color: var(--button);
 	border-radius: 0.5rem;
-	color: #fffbfc;
+	color: var(--clr-white);
 	display: inline-block;
-	font-size: 14px;
-	font-weight: 600;
-	padding: 0.375rem 0.6rem;
+	font-size: var(--fs-small);
+	font-weight: var(--fw-600);
+	padding: var(--size-2) var(--size-3);
 	text-transform: uppercase;
 }
 
 .answers-container {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
-	margin-block: 1rem;
+	gap: var(--size-4);
+	margin-block: var(--size-4);
 }
 .answer-btn {
-	background-color: #fec196;
-	border: 2px solid #e7a06e;
-	border-radius: 0.7rem;
-	color: #090c02;
-	padding: 1rem;
+	background-color: var(--answer-btn);
+	border: 2px solid var(--answer-btn-border);
+	border-radius: var(--size-3);
+	color: var(--clr-neutral-900);
+	padding: var(--size-4);
 	text-align: left;
 	transition: all 0.3s ease;
 
@@ -138,81 +221,81 @@ button {
 
 	&:hover,
 	&:focus-visible {
-		background-color: #bb4d00;
-		color: #fffbfc;
+		background-color: var(--answer-btn-hover);
+		color: var(--clr-neutral-100);
 	}
 }
 .answer-btn.correct {
-	background-color: greenyellow;
-	border: 2px solid green;
-	color: #090c02;
-	font-weight: 700;
+	background-color: var(--answer-btn-bg-✔️);
+	border: 2px solid var(--answer-btn-clr-✔️);
+	color: var(--answer-btn-clr-✔️);
+	font-weight: var(--fw-700);
 }
 .answer-btn.incorrect {
-	background-color: crimson;
-	border: 2px solid red;
-	color: #fffbfc;
+	background-color: var(--answer-btn-bg-❌);
+	border: 2px solid var(--answer-btn-clr-❌);
+	color: var(--answer-btn-clr-❌);
 	font-weight: var(--fw-700);
 }
 
 .progress-bar {
-	background-color: #fec196;
-	border-radius: 0.6rem;
+	background-color: var(--background);
+	border-radius: var(--size-2);
 	height: 16px;
-	margin-block: 1rem;
+	margin-block: var(--size-6);
 	width: 100%;
 	overflow: hidden;
 
 	container-type: inline-size;
 }
 .progress {
-	background-color: #bb4d00;
-	background: linear-gradient(90deg, #e7a06e, #bb4d00);
+	background-color: var(--button);
+	background: linear-gradient(90deg, var(--progress-start), var(--progress-end));
 	background-size: 100cqi;
 	height: 100%;
-	width: 0%;
+	width: 100%;
 	transition: width 0.3s ease;
 }
 
 .result-info {
-	background-color: #fec196;
-	border-radius: 0.6rem;
-	padding: 1rem;
-	margin-bottom: 1rem;
+	background-color: var(--background);
+	border-radius: var(--size-2);
+	padding: var(--size-4);
+	margin-bottom: var(--size-4);
 }
 .result-info p {
-	font-size: 1.5rem;
-	font-weight: 600;
-	margin-bottom: 0.5rem;
+	font-size: var(--fs-mid);
+	font-weight: var(--fw-600);
+	margin-bottom: var(--size-2);
 }
 .result-message {
-	color: #bb4d00;
-	font-size: 1.875rem;
-	font-weight: 700;
+	color: var(--headers);
+	font-size: var(--fs-large);
+	font-weight: var(--fw-700);
 }
 
 .quiz-btn {
-	background-color: #bb4d00;
-	color: #fffbfc;
+	background-color: var(--button);
+	color: var(--clr-white);
 	display: block;
 	margin: 0 auto;
 	transition: background-color 0.3s ease;
 
 	&:hover,
 	&:focus-visible {
-		background-color: #9c4303;
+		background-color: var(--button-hover);
 	}
 	&:focus-visible {
-		outline: 3px solid #bb4d00;
+		outline: 3px solid var(--button);
 	}
 }
 .quiz-btn-outline {
-	background-color: #fec196;
-	color: #090c02;
-	outline: 2px solid #bb4d00;
+	background-color: var(--background);
+	color: var(--color);
+	outline: 2px solid var(--button);
 
 	&:hover,
 	&:focus-visible {
-		color: #fffbfc;
+		color: var(--clr-white);
 	}
 }
