@@ -10,17 +10,17 @@
 		<main class="container">
 			<!-- First Screen - Start/Welcome -->
 			<div class="screen active" id="start-screen">
-				<h1>It's Quiz Time!</h1>
+				<h1 class="text-center">It's Quiz Time!</h1>
 				<h2>Welcome to this General Knowledge Quiz.</h2>
 				<p>Test your knowledge with these fun questions. Share your results and compete against your friends.</p>
 				<p>If at anytime you'd like to stop the quiz and get score for the questions answered, click the "Done" button. Currently there are <span data-attr="total-questions">5</span> questions in total</p>
-				<button id="start-btn">Start Quiz</button>
+				<button class="quiz-btn" id="start-btn">Start Quiz</button>
 			</div>
 
 			<!-- Quiz Screen - Will display 1 question at a time -->
 			<div class="screen" id="quiz-screen">
 				<div class="quiz-header">
-					<h2 class="question-text" id="question-text">The individual question</h2>
+					<h2 class="question-text text-center" id="question-text">The individual question</h2>
 					<div class="quiz-info">
 						<p>Question <span data-attr="current-question">1</span> of <span data-attr="total-questions">5</span></p>
 						<p>Score: <span data-attr="score">0</span></p>
@@ -33,17 +33,18 @@
 				<div class="progress-bar">
 					<div class="progress" data-attr="progress"></div>
 				</div>
+				<button class="quiz-btn quiz-btn-outline" id="start-btn">Done - Show Results</button>
 			</div>
 
 			<!-- Quiz Results Screen - Tally of Score -->
 			<div class="screen" id="result-screen">
-				<h1>Quiz Results</h1>
+				<h1 class="text-center">Quiz Results</h1>
 				<p>You have completed or stopped the quiz.</p>
-				<div class="result-info">
+				<div class="result-info text-center">
 					<p>You scored <span data-attr="final-score">0</span> out of <span data-attr="completed-questions">5</span></p>
 					<div class="result-message" data-attr="result-message">Good job!</div>
 				</div>
-				<button id="restart-btn">Restart Quiz</button>
+				<button class="quiz-btn" id="restart-btn">Restart Quiz</button>
 			</div>
 		</main>
 	</body>
