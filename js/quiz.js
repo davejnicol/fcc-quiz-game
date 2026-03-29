@@ -135,14 +135,16 @@ function showResults() {
     
     if (percentage === 100) {
         resultMessage.textContent = "Perfect! You're a genius!";
-    } else if (percentage >= 80) {
-        resultMessage.textContent = "Great job! You know your stuff!";
-    } else if (percentage >= 60) {
-        resultMessage.textContent = "Good effort! Keep learning!";
-    } else if (percentage >= 40) {
-        resultMessage.textContent = "Not bad! Try again to improve!";
+    } else if (percentage >= 90 && percentage <= 99) { 
+        resultMessage.textContent = "Amazing! You're a general knowledge guru.";
+    } else if (percentage >= 70 && percentage <= 89) {
+        resultMessage.textContent = "Solid work, you know your stuff!";
+    } else if (percentage >= 50 && percentage <= 69) {
+        resultMessage.textContent = "Not bad, but there's room for improvement.";
+    } else if (percentage >= 30 && percentage <= 49) {
+        resultMessage.textContent = "Keep practicing — the next quiz might be your best one yet!";
     } else {
-        resultMessage.textContent = "Keep studying! You'll get better!";
+        resultMessage.textContent = "Time to hit the books — or at least the quiz archives.";
     }
 }
 
