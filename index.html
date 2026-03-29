@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>General Knowledge Quiz Game</title>
+	</head>
+	<body>
+		<main class="container">
+			<!-- First Screen - Start/Welcome -->
+			<div class="screen active" id="start-screen">
+				<h1>It's Quiz Time!</h1>
+				<h2>Welcome to this General Knowledge Quiz.</h2>
+				<p>Test your knowledge with these fun questions. Share your results and compete against your friends.</p>
+				<p>If at anytime you'd like to stop the quiz and get score for the questions answered, click the "Done" button. Currently there are <span data-attr="total-questions">5</span> questions in total</p>
+				<button id="start-btn">Start Quiz</button>
+			</div>
+
+			<!-- Quiz Screen - Will display 1 question at a time -->
+			<div class="screen" id="quiz-screen">
+				<div class="quiz-header">
+					<h2 class="question-text" id="question-text">The individual question</h2>
+					<div class="quiz-info">
+						<p>Question <span data-attr="current-question">1</span> of <span data-attr="total-questions">5</span></p>
+						<p>Score: <span data-attr="score">0</span></p>
+					</div>
+					<div class="question-category" data-attr="question-category">General</div>
+				</div>
+				<div class="answers-container" data-attr="multiple-choice-answers">
+					<!-- Multiple choice answer buttons - Injected by JS -->
+				</div>
+				<div class="progress-bar">
+					<div class="progress" data-attr="progress"></div>
+				</div>
+			</div>
+
+			<!-- Quiz Results Screen - Tally of Score -->
+			<div class="screen" id="result-screen">
+				<h1>Quiz Results</h1>
+				<p>You have completed or stopped the quiz.</p>
+				<div class="result-info">
+					<p>You scored <span data-attr="final-score">0</span> out of <span data-attr="completed-questions">5</span></p>
+					<div class="result-message" data-attr="result-message">Good job!</div>
+				</div>
+				<button id="restart-btn">Restart Quiz</button>
+			</div>
+		</main>
+	</body>
+</html>
