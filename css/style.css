@@ -133,6 +133,8 @@ button {
 }
 .progress {
 	background-color: #bb4d00;
+	background: linear-gradient(90deg, #e7a06e, #bb4d00);
+	background-size: 100cqi;
 	height: 100%;
 	width: 0%;
 	transition: width 0.3s ease;

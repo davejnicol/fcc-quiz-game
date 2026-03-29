@@ -26,13 +26,13 @@ const questionCount = quizQuestions.length;
 // QUIZ STAT VARIABLES
 let currentQuestionIndex = 0;
 let score = 0;
+let answeredQuestions = 0;
 let answersDisabled = false;
 
 totalQuestionElements.forEach(el => {
     el.textContent = questionCount;
 });
-completedQuestions.textContent = questionCount;
-
+// completedQuestions.textContent = questionCount;
 
 // EVENT LISTENERS
 startButton.addEventListener("click", startQuiz);
@@ -102,7 +102,9 @@ function selectAnswer(event) {
         score++;
         overallScore.textContent = score;
     }
-    
+    answeredQuestions++;
+    // console.log(answeredQuestions);
+
     setTimeout(() => { 
         currentQuestionIndex++;
         
@@ -120,8 +122,16 @@ function showResults() {
     resultsScreen.classList.add("active");
 
     finalScore.textContent = score;
+    
+    let percentage = 0;
 
-    const percentage = (score / quizQuestions.length) * 100;
+    if (questionCount > answeredQuestions) {
+        percentage = (score / answeredQuestions) * 100;
+        completedQuestions.textContent = answeredQuestions;
+    } else {
+        percentage = (score / questionCount) * 100;
+        completedQuestions.textContent = questionCount;
+    }
     
     if (percentage === 100) {
         resultMessage.textContent = "Perfect! You're a genius!";
@@ -136,25 +146,16 @@ function showResults() {
     }
 }
 
-
-
-
-
-
 function stopQuiz() {
-    // RESET VARIABLES
-    // currentQuestionIndex = 0;
-    // score = 0;
-    // overallScore.textContent = 0;
-
     quizScreen.classList.remove("active");
     resultsScreen.classList.add("active");
 
-    // showResults();
+    showResults();
 }
 
 function restartQuiz() {
     resultsScreen.classList.remove("active");
+    answeredQuestions = 0;
 
     startQuiz();
 }
