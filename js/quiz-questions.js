@@ -352,9 +352,83 @@ export const quizQuestions = [
             { text: "Ernest Hemingway", correct: false },
         ],
     },
-
-
-
+    {
+        id: 33,
+        catergory: "History",
+        question: "Whose adopted son was Emperor Augustus?",
+        answers: [
+            { text: "Nero", correct: false },
+            { text: "Julius Caesar", correct: true },
+            { text: "Diogenes", correct: false },
+            { text: "Mark Antony", correct: false },
+        ],
+    },
+    {
+        id: 34,
+        catergory: "Entertainment",
+        question: "In what year was the first Avatar movie released?",
+        answers: [
+            { text: "2010", correct: false },
+            { text: "2011", correct: false },
+            { text: "2009", correct: true },
+            { text: "2008", correct: false },
+        ],
+    },
+    {
+        id: 35,
+        catergory: "Sports",
+        question: "How many rings are on the Olympic flag?",
+        answers: [
+            { text: "7", correct: false },
+            { text: "4", correct: false },
+            { text: "6", correct: false },
+            { text: "5", correct: true },
+        ],
+    },
+    {
+        id: 36,
+        catergory: "Entertainment",
+        question: "What was the original name of Mickey Mouse?",
+        answers: [
+            { text: "Marvin Mouse", correct: false },
+            { text: "Mortimer Mouse", correct: true },
+            { text: "The Rat", correct: false },
+            { text: "Marshall Mouse", correct: false },
+        ],
+    },
+    {
+        id: 37,
+        catergory: "Science",
+        question: "What is the name of the element with the chemical symbol 'He'?",
+        answers: [
+            { text: "Helium", correct: true },
+            { text: "Holmium", correct: false },
+            { text: "Hydrogen", correct: false },
+            { text: "Hafnium", correct: false },
+        ],
+    },
+    {
+        id: 38,
+        catergory: "Nature",
+        question: "Which of these animals don’t live in the wild in Australia?",
+        answers: [
+            { text: "Koala", correct: false },
+            { text: "Opossum", correct: true },
+            { text: "Possum", correct: false },
+            { text: "Kookaburra", correct: false },
+        ],
+    },
+    {
+        id: 39,
+        catergory: "History",
+        question: "Which major city put the first urban tram line into service in 1832?",
+        answers: [
+            { text: "New York", correct: true },
+            { text: "Berlin", correct: false },
+            { text: "Vienna", correct: false },
+            { text: "London", correct: false },
+        ],
+    },
     {
         id: 40,
         catergory: "Entertainment",
@@ -366,7 +440,94 @@ export const quizQuestions = [
             { text: "Emma Thompson", correct: false },
         ],
     },
-
+    {
+        id: 41,
+        catergory: "History",
+        question: "Which country was the first to grant women the right to vote?",
+        answers: [
+            { text: "Canada", correct: false },
+            { text: "United Kingdom", correct: false },
+            { text: "United States", correct: false },
+            { text: "New Zealand", correct: true },
+        ],
+    },
+    {
+        id: 42,
+        catergory: "Anatomy",
+        question: "What's the largest organ in the human body?",
+        answers: [
+            { text: "206", correct: true },
+            { text: "208", correct: false },
+            { text: "210", correct: false },
+            { text: "214", correct: false },
+        ],
+    },
+    {
+        id: 43,
+        catergory: "Literature",
+        question: "In which novel would you find the character of Mr. Darcy?",
+        answers: [
+            { text: "Wuthering Heights", correct: false },
+            { text: "Pride and Prejudice", correct: true },
+            { text: "Great Expectations", correct: false },
+            { text: "Jane Eyre", correct: false },
+        ],
+    },
+    {
+        id: 44,
+        catergory: "Technology",
+        question: "What does the acronym 'USB' stand for?",
+        answers: [
+            { text: "Universal Serial Bus", correct: true },
+            { text: "Universal Service Bus", correct: false },
+            { text: "Unified Serial Bus", correct: false },
+            { text: "Unified Serial Bus", correct: false },
+        ],
+    },
+    {
+        id: 45,
+        catergory: "Entertainment",
+        question: "Which TV show features a coffee shop called Central Perk?",
+        answers: [
+            { text: "How I Met Your Mother", correct: false },
+            { text: "Seinfeld", correct: false },
+            { text: "Friends", correct: true },
+            { text: "The Office", correct: false },
+        ],
+    },
+    {
+        id: 46,
+        catergory: "History",
+        question: "In what year did the Titanic sink?",
+        answers: [
+            { text: "1923", correct: false },
+            { text: "1905", correct: false },
+            { text: "1898", correct: false },
+            { text: "1912", correct: true },
+        ],
+    },
+    {
+        id: 47,
+        catergory: "Geography",
+        question: "What is the capital of Canada?",
+        answers: [
+            { text: "Toronto", correct: false },
+            { text: "Montreal", correct: false },
+            { text: "Ottawa", correct: true },
+            { text: "Vancouver", correct: false },
+        ],
+    },
+    {
+        id: 48,
+        catergory: "Science",
+        question: "How is the Earth protected from the effects of Solar Winds from the Sun?",
+        answers: [
+            { text: "Magnetic field", correct: true },
+            { text: "Gravity", correct: false },
+            { text: "The Color Of The Sky", correct: false },
+            { text: "Oxygen", correct: false },
+        ],
+    },
     {
         id: 49,
         catergory: "Entertainment",
@@ -376,6 +537,17 @@ export const quizQuestions = [
             { text: "Jennifer Connelly", correct: false },
             { text: "Jennifer Lawrence", correct: true },
             { text: "Jennifer Garner", correct: false },
+        ],
+    },
+    {
+        id: 50,
+        catergory: "Entertainment",
+        question: "How did Spider-Man get his powers? ",
+        answers: [
+            { text: "Born with them", correct: false },
+            { text: "Bitten by a radioactive spider", correct: true },
+            { text: "Woke up with them after a strange dream", correct: false },
+            { text: "Military experiment gone awry", correct: false },
         ],
     },
 ];
