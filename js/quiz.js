@@ -114,7 +114,7 @@ function selectAnswer(event) {
         } else {
             showResults();
         }
-    }, 1000);
+    }, 2000);
 }
 
 function showResults() {
