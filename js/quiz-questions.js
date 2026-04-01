@@ -454,7 +454,7 @@ export const quizQuestions = [
     {
         id: 42,
         catergory: "Anatomy",
-        question: "What's the largest organ in the human body?",
+        question: "How many bones in the human body?",
         answers: [
             { text: "206", correct: true },
             { text: "208", correct: false },
@@ -522,7 +522,7 @@ export const quizQuestions = [
         catergory: "Science",
         question: "How is the Earth protected from the effects of Solar Winds from the Sun?",
         answers: [
-            { text: "Magnetic field", correct: true },
+            { text: "Magnetic Field", correct: true },
             { text: "Gravity", correct: false },
             { text: "The Color Of The Sky", correct: false },
             { text: "Oxygen", correct: false },

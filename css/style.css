@@ -183,6 +183,9 @@ button {
 	font-size: var(--fs-mid);
 }
 
+.question-text {
+	text-wrap: balance;
+}
 .quiz-info {
 	color: var(--color-3);
 	display: flex;
