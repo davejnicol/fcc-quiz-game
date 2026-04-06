@@ -8,7 +8,7 @@ This is a fun general knowledge quiz game project using HTML, CSS, and JS.
     - [Table of contents](#table-of-contents)
     - [Overview](#overview)
         - [The challenge](#the-challenge)
-        - [Screenshot](#screenshot)
+        - [Screenshots](#screenshots)
     - [My process](#my-process)
         - [Built with](#built-with)
     - [Author](#author)
